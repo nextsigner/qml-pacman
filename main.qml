@@ -12,7 +12,7 @@ ApplicationWindow {
     height: Screen.height
     title: "Mi Super Pac-Man"
     color: 'black'
-    property string fr: Qt.platform.os==='android'?unik.getPath(4):unik.getPath(5)
+    property string fr
     property int fs: width*0.02
     property bool dev:  false
     property var tempJson
@@ -716,6 +716,7 @@ ApplicationWindow {
         }
     }
     Component.onCompleted: {
+        app.fr= Qt.platform.os==='android'?unik.getPath(4):unik.getPath(5)
         app.requestActivate()
     }
     function reiniciar(){

@@ -1,1 +1,1 @@
-Se sube todo
+Se define fr cuando ya se completó la carga de la app
